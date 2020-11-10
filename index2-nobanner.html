@@ -1,28 +1,8 @@
-<html lang="is">
-    <!-- Less markup test -->
-<head>
-
-    <meta charset="utf-8" />
-
-    <style>
-        td p.MsoNormal {
-            margin: 0.1px
-        }
-    </style>
-
-</head>
-
-<body
-    style="
-        display: flex; 
-        flex-wrap: wrap; 
-        margin: 0;
-        mso-line-height-rule: exactly;
-        -webkit-font-smoothing: antialiased;
-        font-family: LV Sans Beta v4, Arial !important;
-    "
->
-
+<style>
+    td p.MsoNormal {
+        margin: 0.1px
+    }
+</style>
 <!--[if mso]>
     
     <table 
@@ -40,6 +20,8 @@
             mso-line-height-rule:exactly;
             mso-table-lspace:0pt;
             mso-table-rspace:0pt;
+            margin:0;
+            -webkit-font-smoothing: antialiased;
         "
     >
 
@@ -61,6 +43,8 @@
             mso-line-height-rule:exactly;
             mso-table-lspace:0pt;
             mso-table-rspace:0pt;
+            margin:0;
+            -webkit-font-smoothing: antialiased;
         "
     >
 
@@ -98,7 +82,7 @@
                             "
                         >   
                             <br/>
-                            <b>Jón Cleon Sigurðsson</b></p>
+                            <b>%%DisplayName%%</b></p>
                     </div>
 
                 </td>
@@ -137,8 +121,8 @@
                             "
                         >
 
-                            Verkefnisstjóri — Samskiptasvið<br/>
-                            Corporate Communications
+                            %%Title%% — %%department%%<br/>
+                            %%customAttribute1%%
                         
                         </p>
 
@@ -173,8 +157,17 @@
                             "
                         >
 
-                            <a href="tel:+3545159209" style="color:#0A0A46; text-decoration: none;"><span style="color:#0A0A46; text-decoration: none;">+354 515 9209</span></a> <br/> <!-- <span> tag removes extra underline in Outlook -->
-                            <a href="tel:+3548484421" style="color:#0A0A46; text-decoration: none;"><span style="color:#0A0A46; text-decoration: none;">+354 848 4421 (Mobile)</span></a>
+                            <a href="tel:+354%%customAttribute2%%" style="color:#0A0A46; text-decoration: none;">
+                                <span style="color:#0A0A46; text-decoration: none;">
+                                    +354 %%customAttribute2%%
+                                </span>
+                            </a> 
+                            <br/> <!-- <span> tag removes extra underline in Outlook -->
+                            <a href="tel:+354%%customAttribute3%%" style="color:#0A0A46; text-decoration: none;">
+                                <span style="color:#0A0A46; text-decoration: none;">
+                                    +354 %%customAttribute3%% (Mobile)
+                                </span>
+                            </a>
 
                         </p>
                     </div>
@@ -352,8 +345,13 @@
                         
 
 
-                        <a href="https://landsvirkjun.is" target="_blank" style="color:#6E7D87; text-decoration: none;">Lagalegur fyrirvari</a> <br/>
-                        <a href="https://landsvirkjun.is" target="_blank" style="color:#6E7D87; text-decoration: none;">Privacy & Legal Disclaimer</a>
+                        <a href="http://www.landsvirkjun.is/fyrirvari" target="_blank" style="color:#6E7D87; text-decoration: none;">
+                            Lagalegur fyrirvari
+                        </a> 
+                        <br/>
+                        <a href="http://www.landsvirkjun.is/fyrirvari" target="_blank" style="color:#6E7D87; text-decoration: none;">
+                            Privacy & Legal Disclaimer
+                        </a>
                         </p>
                     </div>
 
@@ -363,7 +361,3 @@
             
         </tbody>
     </table>       
-
-</body>
-
-</html>
